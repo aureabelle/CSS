@@ -1,0 +1,226 @@
+/* --------------------------------------------------------------
+  Layout includes grid system [16 Grids]
+	
+	Basic Usage:
+	
+	<div class="content">
+		<div class="eight columns">-Content here-</div>
+		<div class="eight columns">-Content here-</div>
+	</div>
+	
+	---
+	
+	Nested Columns: The first column within a nested column group should have the selector "alpha" and the last column should have the selector "omega".
+	
+	<div class="content">
+		<div class="sixteen columns">
+			<div class="four columns alpha">-Content here-</div>
+			<div class="four columns">-Content here-</div>
+			<div class="four columns">-Content here-</div>
+			<div class="four columns omega">-Content here-</div>
+		</div>
+	</div>
+	
+	---
+	
+	Offset Columns:
+	
+	<div class="content">
+		<div class="fourteen columns offset-by-two">-Content here-</div>
+	</div>
+	
+----------------------------------------------------------------- */
+.content {
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 960px;}
+
+/* Base 16-Column Grid 
+------------------------- */
+
+.content .column ,
+.content .columns {
+	float: left; 
+	display: inline; 
+	margin: 0;
+	margin-bottom: 10px; margin-left: 10px; margin-right: 10px;}
+
+/* .alpha ./ omega selectors are used for nested columns */
+.content .alpha {margin-left: 0;} 
+.content .omega {margin-right: 0;}
+
+/* Base Grid */
+.content .one {width: 40px;}
+.content .two {width: 100px;}
+.content .three { width: 160px;}
+.content .four {width: 220px;}
+.content .five {width: 280px;}
+.content .six {width: 340px;}
+.content .seven {width: 400px;}
+.content .eight {width: 460px;}
+.content .nine {width: 520px;}
+.content .ten {width: 580px;}
+.content .eleven {width: 640px;}
+.content .twelve {width: 700px;}
+.content .thirteen {width: 760px;}
+.content .fourteen {width: 820px;}
+.content .fifteen {width: 880px;}
+.content .sixteen {width: 940px;}
+
+.content .one-third {width: 300px;} /* 3 Equal Columns */
+
+/* Offsets */
+.content .offset-by-one {padding-left: 60px;}
+.content .offset-by-two {padding-left: 120px;}
+.content .offset-by-three {padding-left: 180px;}
+.content .offset-by-four {padding-left: 240px;}
+.content .offset-by-five {padding-left: 300px;}
+.content .offset-by-six {padding-left: 360px;}
+.content .offset-by-seven {padding-left: 420px;}
+.content .offset-by-eight {padding-left: 480px;}
+.content .offset-by-nine {padding-left: 540px;}
+.content .offset-by-ten {padding-left: 600px;}
+.content .offset-by-eleven {padding-left: 660px;}
+.content .offset-by-twelve {padding-left: 720px;}
+.content .offset-by-thirteen {padding-left: 780px;}
+.content .offset-by-fourteen {padding-left: 840px;}
+.content .offset-by-fifteen {padding-left: 900px;}
+
+
+
+/* Tablet (Portrait)
+----------------------- */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.content {width: 768px;}
+	
+	.content .column ,
+	.content .columns {margin-left: 10px; margin-right: 10px;}
+	
+	/* Nested Columns */	
+	.content .alpha {margin-left: 0; margin-right: 10px;}
+	.content .omega {margin-left: 10px; margin-right: 0;}
+
+	.content .one {width: 28px;}
+	.content .two {width: 76px;}
+	.content .three {width: 124px;}
+	.content .four {width: 172px;}
+	.content .five {width: 220px;}
+	.content .six {width: 268px;}
+	.content .seven {width: 316px;}
+	.content .eight {width: 364px;}
+	.content .nine {width: 412px;}
+	.content .ten {width: 460px;}
+	.content .eleven {width: 508px;}
+	.content .twelve {width: 556px;}
+	.content .thirteen {width: 604px;}
+	.content .fourteen {width: 652px;}
+	.content .fifteen {width: 700px;}
+	.content .sixteen {width: 748px;}
+
+	.content .one-third {width: 236px;}
+	
+	/* Offsets */
+	.content .offset-by-one {padding-left: 48px;}
+	.content .offset-by-two {padding-left: 96px;}
+	.content .offset-by-three {padding-left: 144px;}
+	.content .offset-by-four {padding-left: 192px;}
+	.content .offset-by-five {padding-left: 240px;}
+	.content .offset-by-six {padding-left: 288px;}
+	.content .offset-by-seven {padding-left: 336px;}
+	.content .offset-by-eight {padding-left: 384px;}
+	.content .offset-by-nine {padding-left: 432px;}
+	.content .offset-by-ten {padding-left: 480px;}
+	.content .offset-by-eleven {padding-left: 528px;}
+	.content .offset-by-twelve {padding-left: 576px;}
+	.content .offset-by-thirteen {padding-left: 624px;}
+	.content .offset-by-fourteen {padding-left: 672px;}
+	.content .offset-by-fifteen {padding-left: 720px;}
+}
+
+
+/* Mobile (Portrait)
+---------------------- */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+	.content {width: 300px;}
+	
+	.content .column,
+	.content .columns {
+		margin: 0;
+		margin-bottom: 5px;}
+
+	.content .one ,
+	.content .two,
+	.content .three,
+	.content .four,
+	.content .five,
+	.content .six,
+	.content .seven,
+	.content .eight,
+	.content .nine,
+	.content .ten,
+	.content .eleven,
+	.content .twelve,
+	.content .thirteen,
+	.content .fourteen,
+	.content .fifteen,
+	.content .sixteen ,
+	.content .one-third {width: 300px;}
+
+	/* Offsets */
+	.content .offset-by-one,
+	.content .offset-by-two,
+	.content .offset-by-three,
+	.content .offset-by-four,
+	.content .offset-by-five,
+	.content .offset-by-six,
+	.content .offset-by-seven,
+	.content .offset-by-eight,
+	.content .offset-by-nine,
+	.content .offset-by-ten,
+	.content .offset-by-eleven,
+	.content .offset-by-twelve,
+	.content .offset-by-thirteen,
+	.content .offset-by-fourteen,
+	.content .offset-by-fifteen {padding-left: 0;}
+
+}
+
+
+/* Mobile (Landscape)
+------------------------ */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.content {width: 420px;}
+	
+	.content .column,
+	.content .columns {
+		margin: 0;
+		margin-bottom: 5px;}
+
+	.content .one,
+	.content .two,
+	.content .three,
+	.content .four,
+	.content .five,
+	.content .six,
+	.content .seven,
+	.content .eight,
+	.content .nine,
+	.content .ten,
+	.content .eleven,
+	.content .twelve,
+	.content .thirteen,
+	.content .fourteen,
+	.content .fifteen,
+	.content .sixteen,
+	.content .one-third{width: 420px;}
+}
